@@ -7,7 +7,7 @@ public class App {
         try {
             BmpReader bmpReader = new BmpReader("it.bmp");
             bmpReader.readBmpTo2DArray();
-            bmpReader.drawBmp();
+            bmpReader.drawBmp('O', '.');
         }
         catch (Exception e){
             System.err.println("Something went wrong\nCaught exception: " + e);

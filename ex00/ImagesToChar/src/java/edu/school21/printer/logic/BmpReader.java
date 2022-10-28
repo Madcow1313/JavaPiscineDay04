@@ -36,16 +36,20 @@ public class BmpReader {
     }
 
     public void drawBmp(){
+        drawBmp('O', '.');
+    }
+
+    public void drawBmp(char black, char white){
         int height = image.getHeight();
         int width = image.getWidth();
 
         for (int i = 0; i < height; i++){
             for (int j = 0; j < width; j++){
                 if (array[i][j] == 0){
-                    System.out.print('o');
+                    System.out.print(black);
                 }
                 else if (array[i][j] == 1){
-                    System.out.print('.');
+                    System.out.print(white);
                 }
                 else
                     System.out.print(' ');
