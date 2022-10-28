@@ -5,7 +5,7 @@ import edu.school21.printer.logic.BmpReader;
 public class App {
     public static void main(String[] args){
         try {
-            BmpReader bmpReader = new BmpReader("./ex00/ImagesToChar/it.bmp");
+            BmpReader bmpReader = new BmpReader("it.bmp");
             bmpReader.readBmpTo2DArray();
             bmpReader.drawBmp();
         }
