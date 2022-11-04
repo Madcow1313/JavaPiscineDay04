@@ -8,4 +8,4 @@ cp -r resources target/
 jar cfvm target/images-to-chars-printer.jar src/manifest.txt -C target .
 
 #Run application
-java -jar target/images-to-chars-printer.jar
+java -jar target/images-to-chars-printer.jar . O
